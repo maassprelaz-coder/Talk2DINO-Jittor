@@ -1,0 +1,5 @@
+{
+  "before_sha256": "bd143b0920689412d0e6409e9eb6dfc50e16092bb9faa8a8684ace1d40645504",
+  "after_sha256": "05bddb620d63863635269cdb83ececf4f033044b952e0788c332bb14d5d04b16",
+  "reason": "Use identical standard integer limits already defined by Jittor, avoiding unused NPP SDK dependency."
+}

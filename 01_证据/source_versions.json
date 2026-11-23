@@ -1,0 +1,18 @@
+{
+  "Talk2DINO": {
+    "commit": "1462d0ebbf3c8d2dab623a03d41548c8e6098f34",
+    "url": "https://github.com/lorebianchi98/Talk2DINO"
+  },
+  "CLIP": {
+    "commit": "d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+    "url": "https://github.com/openai/CLIP"
+  },
+  "dinov2": {
+    "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+    "url": "https://github.com/facebookresearch/dinov2"
+  },
+  "official_mapper_weight": {
+    "file": "vitb_mlp_infonce.pth",
+    "sha256": "5f6efcc520f22916ecf3dfdfb01d6f57e701c1c2e1feda71a80d89e3cd752f0f"
+  }
+}

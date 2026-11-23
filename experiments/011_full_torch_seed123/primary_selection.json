@@ -1,0 +1,12 @@
+{
+  "policy": "official save_best_model=false: evaluate final epoch 100",
+  "official_config_sha256": "d2d6089e8ae3c27f82cc21cee3d32b3415ed40686d8d090b2a289bc53d94dce0",
+  "primary_mapper": "projection_last.npz",
+  "primary_mapper_sha256": "2355c200023df9e87bb399bcfd0f0594edfeae23661e1f9ca2f6ebc28717d6e0",
+  "epochs": 100,
+  "steps": 323600,
+  "verified_equal_to_latest_checkpoint": true,
+  "supplementary_mapper": "projection_best.npz",
+  "supplementary_selection": "COCO minimum validation loss; not used for primary result",
+  "supplementary_epoch": 97
+}

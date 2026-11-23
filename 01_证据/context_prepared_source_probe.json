@@ -1,0 +1,28 @@
+{
+  "val_masks": {
+    "url": "https://hangzh.s3.amazonaws.com/encoding/data/pcontext/val.pth",
+    "size": 913687510,
+    "etag": "\"edb3cf170802955cdb78cb6d6e8a57dc-55\""
+  },
+  "original_gt": {
+    "url": "https://roozbehm.info/pascal-context/trainval.tar.gz",
+    "size": 30710501,
+    "etag": "\"6aa3585b-1d49ae5\""
+  },
+  "mapping_source": {
+    "url": "https://raw.githubusercontent.com/zhanghang1989/PyTorch-Encoding/master/encoding/datasets/pcontext.py",
+    "local": "01_\u8bc1\u636e/context_sources/mapping_source.py"
+  },
+  "mmseg_mapping": {
+    "url": "https://raw.githubusercontent.com/open-mmlab/mmsegmentation/v0.30.0/tools/convert_datasets/pascal_context.py",
+    "local": "01_\u8bc1\u636e/context_sources/mmseg_mapping.py"
+  },
+  "mmseg_classes": {
+    "url": "https://raw.githubusercontent.com/open-mmlab/mmsegmentation/v0.30.0/mmseg/datasets/pascal_context.py",
+    "local": "01_\u8bc1\u636e/context_sources/mmseg_classes.py"
+  },
+  "prepared_reference": {
+    "url": "https://raw.githubusercontent.com/tue-mps/algm-segmenter/master/segm/scripts/prepare_pcontext.py",
+    "local": "01_\u8bc1\u636e/context_sources/prepared_reference.py"
+  }
+}

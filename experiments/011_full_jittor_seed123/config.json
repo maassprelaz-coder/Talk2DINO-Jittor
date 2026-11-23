@@ -1,0 +1,19 @@
+{
+  "framework": "jittor",
+  "feature_manifests": {
+    "train": "61c7e3fd2f87f6e8e2998e2a753d5a8bcdc4a1c4ac7a97a4027f8bc9b3e368a7",
+    "val": "b6afd381bbedf463b2d34dcf1303092903fee9a352e7991b68328aa458f88c4b"
+  },
+  "order_sha256": "5ef6a41689c0a7ee10b661f9e66bfb8058549da926875149d0074726c1d92713",
+  "initial_weight_sha256": "bb9c4cf832cafc84f46b612743d00a62705722d16f573041dede5ac17713fc27",
+  "seed": 123,
+  "epochs": 100,
+  "batch_size": 128,
+  "lr": 0.0001,
+  "optimizer": "Adam: betas=.9,.999,eps=1e-8,wd=0",
+  "temperature": 0.07,
+  "loss": "symmetric CE / actual B squared",
+  "alignment": "max_score",
+  "save_best": "minimum COCO validation mean batch loss; no segmentation labels",
+  "scope": "full"
+}

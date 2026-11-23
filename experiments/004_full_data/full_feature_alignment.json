@@ -1,0 +1,45 @@
+{
+  "checks": [
+    {
+      "split": "train",
+      "kind": "visual",
+      "rows": 82783,
+      "elements": 762928128,
+      "max_abs": 2.1944288164377213e-07,
+      "min_cosine": 0.9999999982838055,
+      "elements_outside_atol1e5_rtol1e4": 0,
+      "pass": true
+    },
+    {
+      "split": "train",
+      "kind": "text",
+      "rows": 414113,
+      "elements": 212025856,
+      "max_abs": 2.0503997802734375e-05,
+      "min_cosine": 0.9999999999900266,
+      "elements_outside_atol1e5_rtol1e4": 0,
+      "pass": true
+    },
+    {
+      "split": "val",
+      "kind": "visual",
+      "rows": 40504,
+      "elements": 31107072,
+      "max_abs": 3.997411113232374e-08,
+      "min_cosine": 0.9999999996454466,
+      "elements_outside_atol1e5_rtol1e4": 0,
+      "pass": true
+    },
+    {
+      "split": "val",
+      "kind": "text",
+      "rows": 202654,
+      "elements": 103758848,
+      "max_abs": 2.765655517578125e-05,
+      "min_cosine": 0.9999999999866412,
+      "elements_outside_atol1e5_rtol1e4": 0,
+      "pass": true
+    }
+  ],
+  "pass": true
+}

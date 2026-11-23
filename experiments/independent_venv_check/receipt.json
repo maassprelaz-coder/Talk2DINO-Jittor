@@ -1,0 +1,69 @@
+{
+  "pass": true,
+  "checks": {
+    "five_images": true,
+    "marked_partial": true,
+    "cuda_works": true,
+    "no_torch": true,
+    "separate_venv": true,
+    "voc20_exact_predictions": true,
+    "voc21_exact_predictions": true,
+    "final_weight": true,
+    "voc20_two_env_repeat_exact": true,
+    "voc21_two_env_repeat_exact": true,
+    "voc21_no_clean_two_env_repeat_exact": true,
+    "raw_scores_strict_allclose": true
+  },
+  "environment": {
+    "python": "$TALK2DINO_RUNTIME/envs/jittor-delivery-check/bin/python",
+    "jittor": "1.3.11.0",
+    "torch_installed": false,
+    "cuda_sum": 6.0
+  },
+  "comparison": {
+    "voc20": {
+      "images": 5,
+      "pixels": 871500,
+      "different_pixels": 0
+    },
+    "voc21": {
+      "images": 5,
+      "pixels": 871500,
+      "different_pixels": 0
+    },
+    "voc21_no_clean": {
+      "images": 5,
+      "pixels": 871500,
+      "different_pixels": 1
+    }
+  },
+  "scope": "独立 Python venv 重装锁定依赖、重编译 Jittor，并复跑 VOC 前 5 张三种口径。复用本机 Python 发行版、编译器、CUDA、已下载依赖、数据与骨干权重。不是第二台电脑或全新系统的冷启动验收，不是重跑完整数据集。",
+  "package_patch_note": "部分下载缓存已含项目补丁；脚本幂等核对适配补丁，原始补丁与摘要保存在 01_证据。",
+  "archived_predictions_all_exact": false,
+  "raw_score_comparison": {
+    "atol": 1e-05,
+    "rtol": 0.0001,
+    "all_pass": true,
+    "max_absolute_error": 4.172325134277344e-07
+  },
+  "archival_difference_details": [
+    {
+      "protocol": "voc21_no_clean",
+      "id": "2007_000123",
+      "y": 361,
+      "x": 147,
+      "archived_label": 19,
+      "repeated_label": 0,
+      "top_two_classes": [
+        19,
+        0
+      ],
+      "top_two_scores": [
+        0.550000011920929,
+        0.550000011920929
+      ],
+      "score_margin": 0.0
+    }
+  ],
+  "qualification": "VOC20 与 VOC21 主口径同历史归档完全一致。关闭背景清理的补充口径在871500像素中有1像素不同；原环境与独立环境重新运行时三口径预测完全一致，分数通过既定1e-5/1e-4判据。差异像素的最高两分非常接近。保留原正式全量结果，不将此重跑写为历史归档逐位相同。"
+}

@@ -1,0 +1,19 @@
+{
+  "recorded_local": "2026-10-25T13:05:56.9668932+08:00",
+  "training_complete": true,
+  "epochs": 100,
+  "steps": 323600,
+  "train_images": 82783,
+  "train_captions": 414113,
+  "primary_checkpoint": "projection_last.npz",
+  "primary_selection": "epoch 100, official save_best_model:false",
+  "correction": "Initial evaluation used minimum COCO-validation checkpoint by mistake. Corrected primary evaluation uses final epoch; prior results retained as supplementary. No retraining or downstream-label checkpoint selection.",
+  "supplementary_checkpoint_epoch": 97,
+  "supplementary_results": {
+    "voc20": 87.07373701602779,
+    "voc21": 58.802154170641344,
+    "context59": 39.40669485929204,
+    "context60": 34.17703192917185
+  },
+  "primary_results": "pending under 011_full_jittor_seed123_final_voc and _final_context"
+}

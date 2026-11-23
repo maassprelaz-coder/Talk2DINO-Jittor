@@ -1,0 +1,19 @@
+{
+  "framework": "torch",
+  "feature_manifests": {
+    "train": "bc8ca819a51070dc8634429b5fca39d64ccfc7b4d5cc304e8a16f922435d3e36",
+    "val": "0c9b292e11bf8a5fdd2be3636f35509ddee9cf88bb32995ba988f3fc7aeb8362"
+  },
+  "order_sha256": "5ef6a41689c0a7ee10b661f9e66bfb8058549da926875149d0074726c1d92713",
+  "initial_weight_sha256": "bb9c4cf832cafc84f46b612743d00a62705722d16f573041dede5ac17713fc27",
+  "seed": 123,
+  "epochs": 100,
+  "batch_size": 128,
+  "lr": 0.0001,
+  "optimizer": "Adam: betas=.9,.999,eps=1e-8,wd=0",
+  "temperature": 0.07,
+  "loss": "symmetric CE / actual B squared",
+  "alignment": "max_score",
+  "save_best": "minimum COCO validation mean batch loss; no segmentation labels",
+  "scope": "full"
+}

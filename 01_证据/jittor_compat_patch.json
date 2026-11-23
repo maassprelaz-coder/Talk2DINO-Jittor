@@ -1,0 +1,11 @@
+{
+  "package": "jittor==1.3.11.0",
+  "target": "$TALK2DINO_RUNTIME/envs/jittor/lib/python3.10/site-packages/jittor/compiler.py",
+  "before_sha256": "3398b120fb43014db85d0beaccfc9775088956e46cec0b16cf62cd8581dd6898",
+  "after_sha256": "5b21c5b58dc86e27741e64db62c54b2bd551117b9d44f47979fa97e8046f0506",
+  "fixes": [
+    "CUDA module search precedence after a CPU import/cache",
+    "allow sm_120 when nvcc is at least 12.8"
+  ],
+  "scope": "project-private venv; no system package edited"
+}

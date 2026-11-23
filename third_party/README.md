@@ -1,0 +1,3 @@
+# Upstream components
+
+The CLIP tokenizer and BPE vocabulary in src/talk2dino_jittor/_vendor are from OpenAI CLIP. Restore the original BPE vocabulary from release_assets before installation. Their MIT notice is distributed with the tokenizer. The reference Context mapping and class files under 01_证据/context_sources are snapshots from PyTorch-Encoding and MMSegmentation, with their notices provided here. The reference validation ID list is linked in scripts/fetch_context_split.py. See 01_证据/source_versions.json and reference_licenses.json for upstream provenance. Jittor patches record the small local adaptations from Jittor 1.3.11.0. Data and official model weights are obtained from their original sources.

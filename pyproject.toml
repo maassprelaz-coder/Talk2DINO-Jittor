@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "talk2dino-jittor"
+version = "0.1.0"
+description = "Jittor reproduction of Talk2DINO (ICCV 2025, DINOv2 ViT-Base)"
+requires-python = ">=3.10"
+dependencies = ["jittor==1.3.11.0", "numpy==1.26.4", "Pillow", "PyYAML", "tqdm", "requests", "ftfy", "regex", "opencv-python-headless==4.11.0.86"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"talk2dino_jittor._vendor" = ["*.gz", "*.txt"]

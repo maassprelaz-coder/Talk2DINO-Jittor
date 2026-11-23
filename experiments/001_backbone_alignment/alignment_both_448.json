@@ -1,0 +1,73 @@
+{
+  "pass": true,
+  "device": "cuda",
+  "jittor": "1.3.11.0",
+  "size": 448,
+  "checks": {
+    "position_embedding": {
+      "pass": true,
+      "max_abs": 7.450580596923828e-08,
+      "mean_abs": 9.378543497362557e-10,
+      "cosine": 0.9999999999999625,
+      "atol": 1e-06,
+      "rtol": 1e-05
+    },
+    "dino/patches": {
+      "pass": true,
+      "max_abs": 3.719329833984375e-05,
+      "mean_abs": 2.0255802155588754e-06,
+      "cosine": 0.9999999999958199,
+      "atol": 0.0001,
+      "rtol": 0.0001
+    },
+    "dino/cls": {
+      "pass": true,
+      "max_abs": 7.152557373046875e-06,
+      "mean_abs": 1.8048009451376856e-06,
+      "cosine": 0.9999999999966438,
+      "atol": 0.0001,
+      "rtol": 0.0001
+    },
+    "dino/attention_logits": {
+      "pass": true,
+      "max_abs": 3.0994415283203125e-05,
+      "mean_abs": 4.237111170368735e-06,
+      "cosine": 0.999999999993165,
+      "atol": 0.0001,
+      "rtol": 0.0001
+    },
+    "dino/head_features": {
+      "pass": true,
+      "max_abs": 8.847564458847046e-09,
+      "mean_abs": 9.84606063347826e-10,
+      "cosine": 0.9999999999986421,
+      "atol": 0.0001,
+      "rtol": 0.0001
+    },
+    "dino/average_feature": {
+      "pass": true,
+      "max_abs": 1.5832483768463135e-08,
+      "mean_abs": 9.925332777882545e-10,
+      "cosine": 0.9999999999984519,
+      "atol": 0.0001,
+      "rtol": 0.0001
+    },
+    "tokens": {
+      "pass": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "cosine": 0.9999999999999999,
+      "atol": 0,
+      "rtol": 0
+    },
+    "clip/text": {
+      "pass": true,
+      "max_abs": 1.9073486328125e-06,
+      "mean_abs": 2.060592123598326e-07,
+      "cosine": 0.999999999999834,
+      "atol": 0.0001,
+      "rtol": 0.0001
+    }
+  },
+  "test_type": "synthetic_image_tensor_and_real_text_numerical_alignment"
+}

@@ -1,0 +1,19 @@
+--- jittor-1.3.11/cuda_limits.h
++++ project-patched/cuda_limits.h
+@@ -7,7 +7,15 @@
+ #pragma once
+ 
+ #ifdef IS_CUDA
+-#include <npp.h>
++// project: identical integer limits from the CPU branch; no NPP runtime used.
++#define 	NPP_MIN_32U   ( 0 )
++#define 	NPP_MAX_32U   ( 4294967295U )
++#define 	NPP_MIN_32S   (-2147483647 - 1 )
++#define 	NPP_MAX_32S   ( 2147483647 )
++#define 	NPP_MIN_64U   ( 0 )
++#define 	NPP_MAX_64U   ( 18446744073709551615ULL )
++#define 	NPP_MIN_64S   (-9223372036854775807LL - 1)
++#define 	NPP_MAX_64S   ( 9223372036854775807LL )
+ #include <math_constants.h>
+ #else
+ #include <limits>

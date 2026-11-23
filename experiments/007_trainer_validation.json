@@ -1,0 +1,20 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "run": "007_trainer_probe_resume",
+      "steps": 12,
+      "max_parameter_abs": 1.1175870895385742e-08,
+      "max_moment_abs": 6.821210263296962e-13,
+      "pass": true
+    },
+    {
+      "run": "007_trainer_probe_torch",
+      "steps": 12,
+      "max_parameter_abs": 1.4901161193847656e-08,
+      "max_moment_abs": 9.094947017729282e-13,
+      "pass": true
+    }
+  ],
+  "scope": "real-data 3-epoch subset probe; not full training"
+}

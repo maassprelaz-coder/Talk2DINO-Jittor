@@ -1,0 +1,87 @@
+{
+  "format": "Raw contiguous bytes, ordered parts and original SHA-256.",
+  "assets": [
+    {
+      "target": "experiments/011_full_jittor_seed123/projection_last.npz",
+      "sha256": "92fe97eb19792ccbaf85db5e40f277e7f78a29badf5c338bcccd0ed1e0e70459",
+      "bytes": 3939410,
+      "parts": [
+        "release_assets/011_full_jittor_seed123.01.bin",
+        "release_assets/011_full_jittor_seed123.02.bin",
+        "release_assets/011_full_jittor_seed123.03.bin",
+        "release_assets/011_full_jittor_seed123.04.bin",
+        "release_assets/011_full_jittor_seed123.05.bin",
+        "release_assets/011_full_jittor_seed123.06.bin",
+        "release_assets/011_full_jittor_seed123.07.bin",
+        "release_assets/011_full_jittor_seed123.08.bin",
+        "release_assets/011_full_jittor_seed123.09.bin",
+        "release_assets/011_full_jittor_seed123.10.bin",
+        "release_assets/011_full_jittor_seed123.11.bin",
+        "release_assets/011_full_jittor_seed123.12.bin",
+        "release_assets/011_full_jittor_seed123.13.bin",
+        "release_assets/011_full_jittor_seed123.14.bin",
+        "release_assets/011_full_jittor_seed123.15.bin",
+        "release_assets/011_full_jittor_seed123.16.bin"
+      ]
+    },
+    {
+      "target": "experiments/011_full_torch_seed123/projection_last.npz",
+      "sha256": "2355c200023df9e87bb399bcfd0f0594edfeae23661e1f9ca2f6ebc28717d6e0",
+      "bytes": 3939410,
+      "parts": [
+        "release_assets/011_full_torch_seed123.01.bin",
+        "release_assets/011_full_torch_seed123.02.bin",
+        "release_assets/011_full_torch_seed123.03.bin",
+        "release_assets/011_full_torch_seed123.04.bin",
+        "release_assets/011_full_torch_seed123.05.bin",
+        "release_assets/011_full_torch_seed123.06.bin",
+        "release_assets/011_full_torch_seed123.07.bin",
+        "release_assets/011_full_torch_seed123.08.bin",
+        "release_assets/011_full_torch_seed123.09.bin",
+        "release_assets/011_full_torch_seed123.10.bin",
+        "release_assets/011_full_torch_seed123.11.bin",
+        "release_assets/011_full_torch_seed123.12.bin",
+        "release_assets/011_full_torch_seed123.13.bin",
+        "release_assets/011_full_torch_seed123.14.bin",
+        "release_assets/011_full_torch_seed123.15.bin",
+        "release_assets/011_full_torch_seed123.16.bin"
+      ]
+    },
+    {
+      "target": "experiments/012_full_jittor_mean_heads_seed123/projection_last.npz",
+      "sha256": "7097865acd496a67a4d76b00804369f8edcb5350612ac7f099baf82d243e4f49",
+      "bytes": 3939410,
+      "parts": [
+        "release_assets/012_full_jittor_mean_heads_seed123.01.bin",
+        "release_assets/012_full_jittor_mean_heads_seed123.02.bin",
+        "release_assets/012_full_jittor_mean_heads_seed123.03.bin",
+        "release_assets/012_full_jittor_mean_heads_seed123.04.bin",
+        "release_assets/012_full_jittor_mean_heads_seed123.05.bin",
+        "release_assets/012_full_jittor_mean_heads_seed123.06.bin",
+        "release_assets/012_full_jittor_mean_heads_seed123.07.bin",
+        "release_assets/012_full_jittor_mean_heads_seed123.08.bin",
+        "release_assets/012_full_jittor_mean_heads_seed123.09.bin",
+        "release_assets/012_full_jittor_mean_heads_seed123.10.bin",
+        "release_assets/012_full_jittor_mean_heads_seed123.11.bin",
+        "release_assets/012_full_jittor_mean_heads_seed123.12.bin",
+        "release_assets/012_full_jittor_mean_heads_seed123.13.bin",
+        "release_assets/012_full_jittor_mean_heads_seed123.14.bin",
+        "release_assets/012_full_jittor_mean_heads_seed123.15.bin",
+        "release_assets/012_full_jittor_mean_heads_seed123.16.bin"
+      ]
+    },
+    {
+      "target": "src/talk2dino_jittor/_vendor/bpe_simple_vocab_16e6.txt.gz",
+      "sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a",
+      "bytes": 1356917,
+      "parts": [
+        "release_assets/clip-bpe.01.bin",
+        "release_assets/clip-bpe.02.bin",
+        "release_assets/clip-bpe.03.bin",
+        "release_assets/clip-bpe.04.bin",
+        "release_assets/clip-bpe.05.bin",
+        "release_assets/clip-bpe.06.bin"
+      ]
+    }
+  ]
+}

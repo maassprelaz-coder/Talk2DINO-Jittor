@@ -1,0 +1,20 @@
+--- jittor-1.3.11/compiler.py
++++ project-patched/compiler.py
+@@ -1011,7 +1011,7 @@
+         pass
+     LOG.i("cuda key:", cu)
+     cache_path = os.path.join(cache_path, cu)
+-    sys.path.append(cache_path)
++    sys.path.insert(0, cache_path)  # project: prefer CUDA core over previously cached CPU core
+ 
+ 
+ def check_clang_latest_supported_cpu():
+@@ -1385,7 +1385,7 @@
+     nvcc_flags = " " + os.environ.get("nvcc_flags", "") + " "
+     nvcc_flags += convert_nvcc_flags(cc_flags)
+     nvcc_version = list(jit_utils.get_int_version(nvcc_path))
+-    max_arch = 90
++    max_arch = 120 if nvcc_version >= [12,8] else 90
+     if nvcc_version < [11,]:
+         max_arch = 75
+     elif nvcc_version < [11,1]:

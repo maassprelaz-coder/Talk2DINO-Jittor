@@ -1,0 +1,19 @@
+{
+  "torch": "2.8.0+cu128",
+  "precision": "float32, TF32 disabled",
+  "image_size": 448,
+  "texts": [
+    "a photo of a cat",
+    "a traffic sign",
+    "a forest"
+  ],
+  "models": {
+    "dino": "dinov2_vitb14_reg",
+    "clip_text": "ViT-B/16"
+  },
+  "weight_files": {
+    "clip_vitb16_text_fp32.npz": "f4be7f274e2eedccf1764c3bd06c3994d4a0303f3a524df6275b7278d02486de",
+    "dinov2_vitb14_reg_fp32.npz": "8c7495697200801f34fd76264a0b77f1d23d991cf8f772988c16853323b00910"
+  },
+  "test_type": "synthetic_image_tensor_and_real_text_numerical_alignment"
+}

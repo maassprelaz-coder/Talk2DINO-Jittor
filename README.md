@@ -45,18 +45,20 @@ mIoU（%）。VOC 验证集 1,449 张，Context 验证集 5,104 张。全量评�
 ~~~bash
 git clone https://github.com/maassprelaz-coder/Talk2DINO-Jittor.git
 cd Talk2DINO-Jittor
+python3 scripts/restore_assets.py
 ~~~
 
 - **检查已保存结果。** 无数据和 GPU 时可阅读上表、[最终实验审计](experiments/final_experiment_audit.json)及各运行目录的 metrics.json。可运行 python -m unittest discover -s tests -v 检查混淆矩阵与 IoU 行为，需要 NumPy。
 - **推理和完整实验。** [复跑指南](docs/REPRODUCE.md)列出了已验证环境、上游提交、训练/评估数据来源、权重准备、VOC 五图推理、全量评测和三组训练命令。
-- **下载 mapper。** 采用 [权重索引](docs/WEIGHTS.md)中的本项目已训练 NPZ，或在 PyTorch 参考环境转换原作者发布权重。mapper 使用两套单独的冻结骨干。
+- **下载 mapper。** 运行还原脚本获取 [权重索引](docs/WEIGHTS.md)中的本项目已训练 NPZ，或在 PyTorch 参考环境转换原作者发布权重。mapper 使用两套单独的冻结骨干。
 
 | 目录 | 内容 |
 |---|---|
 | src/talk2dino_jittor | Jittor 模型、预处理、推理、分词与评价 |
 | scripts | 上游权重转换、数据准备、特征缓存、训练、评价与对齐 |
 | environment | 已实测依赖和环境版本 |
-| experiments | 各运行的指标、协议、权重 SHA-256 和三个自训练 mapper |
+| experiments | 各运行的指标、协议、权重 SHA-256 和还原后 mapper 的位置 |
+| release_assets | 三个 mapper 和 CLIP 词表的发布分片与校验清单 |
 | 01_证据 | 固定版本、兼容补丁和数据来源索引 |
 | tests | 像素指标的单元测试 |
 

@@ -1,0 +1,14 @@
+{
+  "currency": "CNY",
+  "cloud_gpu_spent": 0,
+  "cloud_storage_spent": 0,
+  "cloud_instances_started": 0,
+  "target_range": [
+    0,
+    300
+  ],
+  "previous_upper_limit": 1000,
+  "strategy": "local first; measure before any cloud rental",
+  "date": "2026-10-25",
+  "experiments_complete": true
+}

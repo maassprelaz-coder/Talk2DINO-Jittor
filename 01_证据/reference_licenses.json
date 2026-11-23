@@ -1,0 +1,17 @@
+[
+  {
+    "name": "MMSegmentation",
+    "url": "https://raw.githubusercontent.com/open-mmlab/mmsegmentation/v0.30.0/LICENSE",
+    "sha256": "98b89585ea28b480797870476cd82584425432d1badbe01ac2b9b9bc9cbc2a9b"
+  },
+  {
+    "name": "PyTorch_Encoding",
+    "url": "https://raw.githubusercontent.com/zhanghang1989/PyTorch-Encoding/master/LICENSE",
+    "sha256": "96205f7b4668509c4e01a403c747eb8f5f5750d13ad98663bf3115b183956a61"
+  },
+  {
+    "name": "ALGM_Segmenter",
+    "url": "https://raw.githubusercontent.com/tue-mps/algm-segmenter/master/LICENSE",
+    "sha256": "558f20bda1cc90e32b3db60bc7b148679718baaac27931a1795b469f526a0849"
+  }
+]
